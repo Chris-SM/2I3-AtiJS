@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastra aluno</title>
+</head>
+<body>
+<!-- Cadastre alunos (Nome, Curso e ano de Conclusão);-->
+    <div id="CadastrodeAlu" onsubmit="salvar()">
+        <form>
+            <label for="NomeA">Digite o nome:</label> <br>
+            <input type="text" id="Nome" required> <br>
+            <label for="CursoA">Digite o Curso:</label> <br>
+            <input type="text" id="Curso" required> <br>
+            <label for="ConcluA">Digite o ano de conclusão:</label><br>
+            <input type="number" id="Ano" min="1900" max="2024" value="1900" required><br>
+            <button type="submit">Enviar</button><br>
+        </form> <br><br>
+    </div>
+<!-- Mostre os dados de um aluno específico;-->
+<!-- PesqEsp(document.getElementById('barra').value) -->
+    <div id="PesquisadeAlu">
+        <label for="Pesq">Digite o nome do aluno que quer pesquisar:</label><br>
+        <input type="text" id="barra"> <br>
+        <button type="button" onclick="PesqEsp(document.getElementById('barra').value)">Enviar</button> <br><br>
+    </div>
+<!-- Mostre os dados de todos os alunos;-->
+    <div id="AlunosCadas">
+    </div>
+<!-- Atualize os dados de um aluno específico;-->
+    <div id="AtualizaA" style="display: none;">
+        <form>
+            <label for="NomeA">Digite o nome:</label>
+            <input type="text" required>
+            <label for="CursoA">Digite o Curso:</label>
+            <input type="text" required>
+            <label for="ConcluA">Digite o ano de conclusão:</label>
+            <input type="number" min="1900" max="2024" value="1900" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+<!-- Remova os dados de um aluno específico. -->
+    <button type="button" onclick="Remove(1)"></button>
+</body>
+<script src="engi.js"></script>
+</html>
