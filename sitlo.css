@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: url(img/pyke.png) no-repeat center;
+    background-size: contain;
+    background-color: black;
+}
+
+#Tudo{
+    padding: 10px;
+    position: absolute;
+    left: calc(25% - 13vw);
+    top: 20%;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    width: 26vw;
+    height: fit-content;
+    background-color: rgba(56, 0, 0, 0.616);
+    color: white;
+    font-family: monospace;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-size: 110%;
+}
+
+input{
+    width: 20vw;
+}
+
+button{
+    background-color: #753737;
+    border-radius: 4px;
+    border: 1px black solid;
+    padding: 6px;
+    color: #C6E0CD;
+}
+
+button:hover{
+    background-color: #B58282;
+    color: #0C3618;
+}
+
+hr{
+width: calc(100% + 19px);
+margin-left: -10px;
+border: solid black 1px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+}
+table{
+    border-radius: 1vw;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.267);
+}
